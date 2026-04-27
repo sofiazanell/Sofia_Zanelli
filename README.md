@@ -20,7 +20,7 @@ This project investigates how geopolitical risk transmits into exchange rate vol
 | Geopolitical Risk Index (GPR) | Caldara & Iacoviello | Monthly |
 | U.S. & Russia merchandise exports | WTO Time Series API | Annual |
 
-### 4. Predictive Modeling
+### Predictive Modeling
 
 **Random Forest Classifier**
 Predicts whether a given day will be an extreme volatility day (top 10th percentile of absolute daily change), fitted separately for USD and RUB.
