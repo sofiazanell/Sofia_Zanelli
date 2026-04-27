@@ -23,7 +23,7 @@ This project investigates how geopolitical risk transmits into exchange rate vol
 ### 4. Predictive Modeling
 
 **Random Forest Classifier**
-Predicts whether a given day will be an extreme volatility day (top 10th percentile of absolute daily change), fitted separately for USD and RUB. Both models achieve ~88–89% overall accuracy, with the primary limitation being low recall on rare extreme-day events.
+Predicts whether a given day will be an extreme volatility day (top 10th percentile of absolute daily change), fitted separately for USD and RUB.
 
 **Linear Regression (Models 2 & 3)**
 Two OLS models — one per currency — regress daily percentage changes on GPR scores, lagged returns, rolling volatility, and annual export growth. Features are standardized prior to fitting to allow coefficient magnitude comparison. Raw coefficients are used for RMSE/R² reporting to preserve interpretability in original units.
@@ -31,7 +31,7 @@ Two OLS models — one per currency — regress daily percentage changes on GPR 
 ## Key Findings
 
 - **Structural asymmetry**: The USD behaves as a mature reserve currency, absorbing geopolitical shocks with minimal volatility transmission. The RUB is structurally reactive, amplifying external shocks regardless of their origin.
-- **GPR as an amplifier, not a predictor**: The monthly GPR index does not reliably predict extreme currency days. RUB volatility is in some regimes *higher* during normal GPR periods than elevated ones, suggesting the index misses sudden structural ruptures like sanctions announcements.
+- **GPR as an amplifier, not a predictor**: The monthly GPR index does not reliably predict extreme currency days. RUB volatility is in some regimes higher during normal GPR periods than elevated ones, suggesting the index misses sudden structural ruptures like sanctions announcements.
 - **The 2022 episode**: The Russian invasion of Ukraine produced the largest RUB volatility spike in the dataset and a collapse in Russian exports — yet the GPR_RUS index continued declining rather than spiking, exposing a fundamental limitation of backward-looking risk indices in capturing regime-breaking events.
 - **Export data frequency mismatch**: Annual WTO export figures produce near-zero coefficients in the regression models, not because trade is irrelevant, but because assigning the same annual figure to every trading day eliminates all within-year variation. This is a data limitation, not an economic conclusion.
 - **Lagged return dominates**: The single strongest predictor in both regression models is the lagged one-day return, with the effect being substantially larger for RUB (–0.449) than USD (–0.025), indicating the ruble is more prone to mean reversion following large moves.
