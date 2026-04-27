@@ -17,7 +17,7 @@ This project investigates how geopolitical risk transmits into exchange rate vol
 |---|---|---|
 | USD/EUR exchange rate | Google Finance | Daily |
 | RUB/EUR exchange rate | Google Finance | Daily |
-| Geopolitical Risk Index (GPR) | Caldara & Iacoviello (2022) | Monthly |
+| Geopolitical Risk Index (GPR) | Caldara & Iacoviello | Monthly |
 | U.S. & Russia merchandise exports | WTO Time Series API | Annual |
 
 ### 4. Predictive Modeling
